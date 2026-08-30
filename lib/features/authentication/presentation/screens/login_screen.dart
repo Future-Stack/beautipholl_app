@@ -67,7 +67,7 @@ class HomeScreen extends StatelessWidget {
                 controller: controller.categoryController,
                 decoration: InputDecoration(
                   hintText: 'Enter new category name',
-                  border: OutlineInputBorder(),
+                  border: InputBorder.none,
                   prefixIcon: Icon(Icons.category),
                 ),
               ),

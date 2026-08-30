@@ -37,7 +37,9 @@ class CategoryController extends GetxController {
         final categoryData = GetCategory.fromJson(jsonData);
         categories.assignAll(categoryData.data ?? []);
       } else {
-        AppLoggerHelper.error('Failed to load categories: ${response.statusCode}');
+        AppLoggerHelper.error(
+          'Failed to load categories: ${response.statusCode}',
+        );
       }
     } catch (e) {
       AppLoggerHelper.error('Failed to load categories', e);
